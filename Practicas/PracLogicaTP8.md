@@ -170,6 +170,43 @@ Ejercicio 16.  Sea A una fbf donde aparecen solo los conectivos ∧, ¬. Sea A* 
  
 Ayuda: ver prop 1.15, Hamilton 
 
+Para probar esto tomamos el numero N como el numero de conectivas que aparecen en A. Tenemos que lograr demostrar que para cada numero natural n toda forma enunciativa restringida A que tenga exactamente n conectivas satisfase la proposicion.
+
+Caso base N = 0.
+No hay conectivas en A por lo tanto = p
+y A* = -p por lo tanto A* es logicamente equivalente a -A que es -p
+
+Caso de induccion: 
+Suponemos n > 0, A tiene n conectivas,
+n = 1 a tiene 1 conectiva
+dos posibilidades
+p V q 
+p y q
+
+A* seria
+-p y -q
+-p V -q
+A- seria
+-(p V q)
+-(p y q)
+Probamos que cada caso son logicamente equivalentes
+caso 1
+| p   | q   | -p  | -q  | -p o -q | -(p y q) |
+| :-- | --- | --- | --- | ------- | -------- |
+| V   | V   | F   | F   | F       | F        |
+| V   | F   | F   | V   | V       | V        |
+| F   | V   | V   | F   | V       | V        |
+| F   | F   | V   | V   | V       | V |
+caso 2
+| p   | q   | -p  | -q  | -p y -q | -(p V q) |
+| :-- | --- | --- | --- | ------- | -------- |
+| V   | V   | F   | F   | F       | F        |
+| V   | F   | F   | V   | F       | F        |
+| F   | V   | V   | F   | F       | F        |
+| F   | F   | V   | V   | V       | V        |
+Como vemos son logicamente equivalentes
+
+Reestudiar proposicion 1.15 no la entendi bien
 Ejercicio  17.  Demostrar  utilizando  la  técnica  de  inducción  que  cualquier  fórmula  bien 
 formada A que contenga sólo los conectivos {∨, ∧} puede tomar el valor F. 
  
