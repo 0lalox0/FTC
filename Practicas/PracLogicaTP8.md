@@ -151,6 +151,50 @@ Ejercicio 13. Sea A una fbf donde aparecen solo los conectivos ∧, ∨, ¬ . Se
 (p y -q) y (q o q) -> contradiccion no tautologia
 
 Ejercicio  14.  Demostrar  utilizando  la  técnica  del  absurdo  que  dadas  A  y  B  fbfs cualesquiera, siempre ocurre que si A y A → B son tautologías entonces B también lo es.  
-
- 
 Ayuda: ver prop. 1.9, Hamilton
+
+Para usar el Absurdo  veamos el caso contrario.
+Si A es una tautologia -> siempre da V
+y A -> B es una tautologia siempre da V
+suponemos que B no es una tautologia, es decir que podria dar F
+en ese caso como A siempre es V y b puede dar F deducimos que
+V -> F = V lo cual es mentira ya que seria falso, haciedno que A -> B no sea una tautologia lo cual contradice la supocicion inicial.
+
+Ejercicio 15. Demostrar utilizando la técnica del **absurdo** que (p∧¬p)→q es una tautología.
+
+(p∧¬p)→q es una tautologia
+
+Suponemos que no es una tautologia para que una -> de falso solo existe una opcion y es que sea : V -> F y p y -p siempre da  Falso, por lo tanto nunca se comple la condicion.
+
+Ejercicio 16.  Sea A una fbf donde aparecen solo los conectivos ∧, ¬. Sea A* la fbf que se obtiene  a  partir  de  A  reemplazando  cada  ∧  por  ∨  y  cada  letra  de  proposición  por  su negación  (o  sea,  cada  p  por  ¬p,  cada  q  por  ¬q,  etc.).  Probar,  utilizando  la  técnica  de inducción que A* es lógicamente equivalente a ¬A. 
+ 
+Ayuda: ver prop 1.15, Hamilton 
+
+Ejercicio  17.  Demostrar  utilizando  la  técnica  de  inducción  que  cualquier  fórmula  bien 
+formada A que contenga sólo los conectivos {∨, ∧} puede tomar el valor F. 
+ 
+Ayuda: ver ejercicio resuelto en clase teórica
+
+Para probar esto vamos a tomar una valuacion que haga que A sea falsa.
+Sea v una valuacion que hace q todas las letras sean falsa osea v(pi) = F para todo i. Con esa valuacion la fbf A tmb va a tomar el valor F
+
+N = cantidad de conectivos de la fbf
+
+Caso base n = 0
+No hay conectivos A es atomica A = p
+v(p) = F por lo tanto v(A) = F
+Se cumple
+
+Hipotesis Inductiva: Asumimos que para toda fbf A q contiene solo V y Y con N o menos conectivos v(A) = F
+
+Caso N+1
+Usando la H.I. tenemos que poder probar que v(A)=F, para una fórmula A que tiene N+1 conectivos. 
+A ppuede tener dos formatos con un conectivo:
+Caso 1: A es (B ∨ C) 
+Caso 2: A es (B ∧ C)
+Vemos que tanto B como C tienen N o menos conectivos , por lo tanto para ellas vale la 
+H.I., es decir v(B)=F y v(C)=F .
+ Entonces, por la definición de la semántica del ∨ y del ∧, tanto en el caso 1 como en el caso 2, v(A)=F.
+ Con esto hemos demostrado que v(A)=F, para cualquier fbf (que contenga sólo ∨ y ∧ )
+ Hemos demostrado que A puede tomar el valor Falso y por lo tanto 
+A no es una Tautología.
