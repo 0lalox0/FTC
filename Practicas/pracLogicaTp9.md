@@ -18,7 +18,12 @@ A = ((q->r)->p)
 b)  ¿Es A  un teorema de  L? Justificar.
 para comprobar si A es un teroma de L hay que ver si se cumple
 () ├𝐿 𝐴, es decir si con un conjunto vacio se deduce con L A.
-1. No veo forma posible
+() |-L ((q->r)->p)
+por metateorema de la deduccion podemos decir que si probamos esto eso se cumple.
+(,(q->r)) |-L p
+
 c)  ¿Es A  tautología? Justificar.
 A no es una tautologia.
 si q = V, r = V, p = f, el valor el falso de A
+
+Chat GPT confirma ajdsja
