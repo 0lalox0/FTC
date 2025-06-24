@@ -107,8 +107,10 @@ Podria decir:
        1. Podemos decir por metateorema de deducciones
             R U {C} ||-L B
     2. Es cierto que |-L A? Justificar 
+   A simple vista no no es cierto
 
 
 Ejercicio 7. ¿Es el sistema formal L  decidible? Justificar.
 Ayuda: si es decidible, debería ser posible determinar (decidir) para cada fbf, si es o no teorema 
 de  L. 
+   Si si es decidible ya que se puede hacer la tabla de verdad y aunque tarde mucho siempre va a terminar
