@@ -1,0 +1,1 @@
+### Practica 11 Logica de predicados Semantica
