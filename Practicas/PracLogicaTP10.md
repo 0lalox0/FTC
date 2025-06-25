@@ -75,9 +75,46 @@ E;(x) (IA(x) y Ent(x,Alumnos FTC) y Log(x))
 Ejercicio 3.  Escribir las siguientes proposiciones usando un lenguaje de predicados de primer 
 orden: 
 I.  El cero es el menor natural. 
+Mnatu(x) x es el menor natural
+Mnatu(x)
+Chargpt:
+<=(x,y) x es menor o igual a y
+N(x) x es natural
+A;(x) (N(x) -> <=(x,0)) 
+
+Ahora q pienso tmb se cumple:
+
+-E;(x) (N(x) y -<=(x,0))
+
 II.  El conjunto vacío está incluido en cualquier conjunto. 
-III.  Si se prueba una propiedad para el cero y luego se prueba que esa misma propiedad 
-vale para el número n+1 si vale para n, entonces se ha probado que la propiedad vale 
-para cualquier natural. 
-IV.  Si hay un número natural que cumple una cierta propiedad, entonces hay un mínimo 
-natural que cumple esa propiedad.
+Conju(x) x es un conjunto
+C(x,y) x esta incluido en y
+A;(x)(Conju(x) -> C({},x))
+o (devuelta)
+-E(x)(Conju(x) y -C({},x))
+III.  Si se prueba una propiedad para el cero y luego se prueba que esa misma propiedad vale para el número n+1 si vale para n, entonces se ha probado que la propiedad vale para cualquier natural.
+
+
+P(x,y) la propiedad x se prueba para el num y
+N(x) x es natural
+
+x es la propiedad
+(P(x,0) y P(x,n+1) y P(x,n)) -> (A;(y) N(y) -> P(x,y))
+chatgpt:
+(P(x,0) y (A;(n) (N(x) -> P(x,n) -> P(x,n+)))) -> (A;(y) N(y) -> P(x,y))
+
+
+IV.  Si hay un número natural que cumple una cierta propiedad, entonces hay un mínimo natural que cumple esa propiedad.
+
+P(x,y) el numero x cumple con la propiedad y
+Nat(x) x es un numero natural
+MinNat(x) x es un minimo natural
+
+P(x,y) y Nat(x) -> [E;(n) (MinNat(n) y P(n,y))]
+
+o
+
+[E;(x) P(x,y) y Nat(x)] -> [E;(n) (MinNat(n) y P(n,y))]
+
+Chatgpt:
+(∃x(Nat(x)∧P(x)))→∃m(Nat(m)∧P(m)∧∀y(Nat(y)∧P(y)→m≤y))
