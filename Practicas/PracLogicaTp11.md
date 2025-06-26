@@ -198,3 +198,51 @@ Ambas fórmulas **tienen el mismo valor de verdad en todas las interpretaciones*
 | VI  | (∀x)(S(x) ∨ T(x))             | (∀x)S(x) ∨ (∀x)T(x)           |
 
 Guardo esta para despues
+
+
+## Ejercicio 4
+
+Sea un lenguaje de primer orden con las siguientes características:
+
+- Conjunto de constantes: C = {c, u}
+- Sin símbolos de función: F = ∅
+- Conjunto de símbolos de predicado: P = {A}
+
+Interpretación I sobre el dominio de los números naturales:
+
+- I(c) = 0
+- I(u) = 1
+- I(A(x, y)) = "x ≤ y"
+
+---
+
+Verificar si las siguientes afirmaciones son o no correctas. Justificar las respuestas:
+
+- A(c, x) es satisfactible en I.
+  - Si es satisfactible ya que x = 0, 0 <= 0  = V
+- A(u, x) es satisfactible en I.
+  -  Si es satisfactible ya que x = 1 , 0 <= 1  = V
+- (∀x)(A(c, x)) es satisfactible en I.
+  - Si, todos los Naturales son o iguales o mayores a 0 ya que los negativos no pertenecen a este dominio
+- (∀x)(A(u, x)) es satisfactible en I.
+  - No, no todos los naturales son o mayor o iguales a u = 1, por ejemple 0 no cumple asique no cumple para todos los naturales
+- A(c, x) es verdadera en I.
+  Def:Si una fórmula A, con una interpretación I, se satisface en todas las valoraciones, se dice que A es VERDADERA en I. Se escribe así: |=I A.
+ Por ejemplo, (∀x) 𝑃12(𝑓12(x, c1), x) es verdadera en la interpretación de losnaturales con la suma y la igualdad.Pq todo número natural x cumple que x + 0 = x
+  -No puedo decir si es verdadera o no ya que necesito un valor de x o cuantificadores. En este caso cualquier valor q tome x dentro del dominio va a causar que sea veredadera la fbf ?????  Entonces si seria Verdadera
+- (∀x)A(c, x) es lógicamente válida.
+  -Si una  fórmula es verdadera en toda interpretación  
+es  LÓGICAMENTE VÁLIDA. 
+La notación es |= A.
+ Por ejemplo, ((∀x) P(x) → (∃x) P(x) )es válida, cualquiera sea P. 
+  - En este dominio es verdadera la fbf, pero para ser logicamente valida iene q ser verdadero en todos los dominios posibles, y eso no pasa
+  - ContraEjemplo:
+    Si cambio el dominio a los numeros enteros.
+    x = -1, 0 <= -1 = F, por lo tanto no es logicamente valida ??????
+  -O tengo q cambiar lo que hace A(x,y) ??
+
+- A(u, c) ∧ ¬A(u, c) es contradictoria.
+  - Si es contradictoria, ya q da igual el dominio ni la Interpretacion siempre va a dar falso
+  - Las fórmulas falsas en toda interpretación se identifican como CONTRADICCIONES.  
+Por ejemplo, la negación de cualquier fórmula lógicamente válida.
+
