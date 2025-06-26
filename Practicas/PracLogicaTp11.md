@@ -101,4 +101,100 @@ y **en todos los casos** ambas fórmulas resultan con **el mismo valor de verdad
 
 Sí, son **i-equivalentes**, porque en **toda interpretación y valuación** tienen el **mismo valor de verdad**.
 
-II.   ∃𝑥()(∀𝑦)𝑅(𝑥,𝑦) (∀𝑦)∃𝑥()𝑅(𝑥,𝑦)
+III.   ∃(x)(∀𝑦)𝑅(𝑥,𝑦)   (∀𝑦)∃(x)𝑅(𝑥,𝑦)
+
+No, no son logicamente equivalentes ya que dicen cosas distintas:
+1° Existe(por lo menos) un x q para todo y R(x,y) se cumple
+2° Para todo Y existe un x q R(x,y) se cumple
+
+
+
+### 🧪 Evaluación:
+
+Tomamos una interpretación:
+
+- Dominio: D = {1, 2}  
+- R^I = { (1,1), (2,2) }
+
+Evaluamos ambas fórmulas:
+
+- ∃(x)(∀𝑦)𝑅(𝑥,𝑦): ❌ Falso (por ejemplo, x=1, y=2)  
+- ∃(x)(∀𝑦)𝑅(𝑥,𝑦): ✅ Verdadera (por ejemplo, x=1, y=1)   No cumple
+- (∀𝑦)∃(x)𝑅(𝑥,𝑦): ✅ Verdadera (y=1, x=1)
+- (∀𝑦)∃(x)𝑅(𝑥,𝑦): ✅ Verdadera (y=2, x=2)
+  
+
+
+| IV  | (∃x)(S(x) ∧ T(x))             | (∃x)S(x) ∧ (∃x)T(x)            |
+
+Falso. Las fórmulas no son lógicamente equivalentes, ya que existe al menos una interpretación donde tienen distinto valor de verdad.
+
+**Contraejemplo:**
+
+- Dominio: D = ℕ (números naturales)  
+- Interpretación:  
+  - S(x): “x es par”  
+  - T(x): “x es impar”
+
+Evaluación:
+
+- (∃x)(S(x) ∧ T(x)) → ❌ Falsa  
+  No existe ningún número que sea par e impar al mismo tiempo.
+
+- (∃x)S(x) ∧ (∃x)T(x) → ✅ Verdadera  
+  Porque existen números pares (por ejemplo, 2) y existen números impares (por ejemplo, 3).
+
+**Conclusión:**  
+No son lógicamente equivalentes, ya que existe una interpretación donde una es verdadera y la otra falsa.
+
+
+| V   | (∃x)(S(x) ∨ T(x))             | (∃x)S(x) ∨ (∃x)T(x)           |
+Si, si son equivalentes ya que significan lo mismo:
+o existe algun x q cumple S(x)
+o existe algun x q cumple T(x)
+
+Chatgpt(Nocion de i equivalencia):
+✅ **Son i-equivalentes.**
+
+Dos fórmulas son i-equivalentes si **en toda interpretación** y para **toda valuación**,  tienen el mismo valor de verdad.
+
+---
+
+### 🧪 Interpretación 1
+
+- Dominio: D = {1}
+- S^I = {1}
+- T^I = ∅
+
+- (∃x)(S(x) ∨ T(x)) → ✅ Verdadera (x = 1 cumple S)
+- (∃x)S(x) ∨ (∃x)T(x) → ✅ Verdadera
+
+---
+
+### 🧪 Interpretación 2
+
+- S^I = ∅, T^I = {2}, D = {1, 2}
+
+- (∃x)(S(x) ∨ T(x)) → ✅ Verdadera (x = 2)
+- (∃x)S(x) ∨ (∃x)T(x) → ✅ Verdadera
+
+---
+
+### 🧪 Interpretación 3
+
+- S^I = ∅, T^I = ∅, D = {1, 2}
+
+- Ambas fórmulas → ❌ Falsas
+
+---
+
+### ✅ Conclusión
+
+Ambas fórmulas **tienen el mismo valor de verdad en todas las interpretaciones**.  
+→ **Son lógicamente equivalentes por i-equivalencia**.
+
+
+
+| VI  | (∀x)(S(x) ∨ T(x))             | (∀x)S(x) ∨ (∀x)T(x)           |
+
+Guardo esta para despues
