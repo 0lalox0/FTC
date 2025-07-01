@@ -229,7 +229,8 @@ Verificar si las siguientes afirmaciones son o no correctas. Justificar las resp
 - A(c, x) es verdadera en I.
   Def:Si una fórmula A, con una interpretación I, se satisface en todas las valoraciones, se dice que A es VERDADERA en I. Se escribe así: |=I A.
  Por ejemplo, (∀x) 𝑃12(𝑓12(x, c1), x) es verdadera en la interpretación de losnaturales con la suma y la igualdad.Pq todo número natural x cumple que x + 0 = x
-  -No puedo decir si es verdadera o no ya que necesito un valor de x o cuantificadores. En este caso cualquier valor q tome x dentro del dominio va a causar que sea veredadera la fbf ?????  Entonces si seria Verdadera
+  Según la definición, para ser verdadera en I, debe cumplirse 0 ≤ x para todas las valoraciones posibles de x en el dominio ℕ.
+   En ℕ, 0 ≤ x siempre se cumple (porque todos los naturales son ≥ 0). ????
 - (∀x)A(c, x) es lógicamente válida.
   -Si una  fórmula es verdadera en toda interpretación  
 es  LÓGICAMENTE VÁLIDA. 
@@ -245,4 +246,38 @@ La notación es |= A.
   - Si es contradictoria, ya q da igual el dominio ni la Interpretacion siempre va a dar falso
   - Las fórmulas falsas en toda interpretación se identifican como CONTRADICCIONES.  
 Por ejemplo, la negación de cualquier fórmula lógicamente válida.
+
+
+### Ejercicio 5
+Interpretacion donde todas las formunas son verdaderas:
+  Dominio = N
+  I-P(x,y) = x <= y
+  c = 0
+  f(x) = sucecion osea f(x) = x+1
+  I. ∀(x) 𝑃(𝑥,𝑥)
+    Siempre es verdadero para todo numero natural ya que es menor o igual
+  II. ¬((∀y)(∀x)(𝑃(𝑥,𝑦)→𝑃(𝑦,𝑥))) 
+      Es verdadero ya que si x <= y, y >= x y da falso pero como es negado da V
+  III. ∀𝑥()∀𝑦()∀𝑧()((𝑃(𝑥,𝑦) ∧ 𝑃(𝑦,𝑧)) → 𝑃(𝑥,z))
+      Verdadero, si x es menor o igaual a y e y es menor igual a z enyonces x es menor o igual a z.
+  IV: ∀𝑥()𝑃(𝑐,𝑥)
+      Constante es 0, el dominio los Naturales asique es verdadero que todo numero natural x es menor o igual a 0
+  V: (∀𝑥)𝑃(𝑥,𝑓(𝑥))
+    Para todo natural ese natural va a ser menor o igual a su sucecion
+
+Interpretacion donde todas las formunas son Falsas
+  Dominio = N
+  I-P(x,y) = x != y
+  c = 0
+  f(x) = funcion q no hace nada f(x) = x
+  I. ∀(x) 𝑃(𝑥,𝑥)
+    Para todo X x no es igual a x
+  II. ¬((∀y)(∀x)(𝑃(𝑥,𝑦)→𝑃(𝑦,𝑥))) 
+      No es cierto que para todo "y" y para todo x si "x" , no es igual a "y" entonces "y" es no es igual a "x" ????
+  III. ∀𝑥()∀𝑦()∀𝑧()((𝑃(𝑥,𝑦) ∧ 𝑃(𝑦,𝑧)) → 𝑃(𝑥,z))
+      Para todo x , y , z si x no es igual a y Y y no es igual a z, entonces z no es igual a x
+  IV: ∀𝑥()𝑃(𝑐,𝑥)
+      para todo x, x no es igual a 0
+  V: (∀𝑥)𝑃(𝑥,𝑓(𝑥))
+    para todo x x no es igual a x.
 
