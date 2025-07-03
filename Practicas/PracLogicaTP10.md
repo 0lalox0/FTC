@@ -18,16 +18,16 @@ C(x,y) x contribuye a proyectos de tipo y
 O(y) y es open source
 Cola(x) x es colaborativo
 
-A;(x) (U(x) y C(x,y) y O(y)) -> Cola(x) ????
+A;(x) (U(x) y C(x,y) y O(y)) -> Cola(x) ???
 II.  Ningún sistema que tenga bugs críticos puede ser entregado ni desplegado en 
 producción. 
-S(x) x es un sistema //Hace falta?
+S(x) x es un sistema //Hace falta ???
 B(x, y) x tiene bugs de tipo y(hace falta y o solo pongo tiene bugs criticos)
 Cri(y) y es critico
 E(x,p)x no puede ser entregado en p
 D(x,p)x no puede ser deployado en p
 Prod(p) p es producion
--E;(x) (S(x) y B(x,y) y Cri(y) y -(E(x,p) o D(x,p))) ????
+-E;(x) (S(x) y B(x,y) y Cri(y) y -(E(x,p) o D(x,p))) ???
 o
 A;(x) (S(x) y B(x,y) y Cri(y)) -> (E(x,p) o D(x,p)
 III.  Ningún modelo de IA que se entrena con datos erróneos es preciso. 
@@ -36,7 +36,7 @@ E(x)x se entrea con datos Erroneos
 P(x) x es preciso
 -E;(x) (M(x)  y  E(x)) y P(x)
 Porque no 
--E;(x) (M(x)  y  E(x)) -> P(x) ????
+-E;(x) (M(x)  y  E(x)) -> P(x) ???
 IV.  Todo estudiante que cursa FTC (Fundamentos de Teoría de la computación) y sube sus 
 ejercicios a IDEAS aprueba la práctica. 
 E(x) x es un estudiante
@@ -68,7 +68,7 @@ VII.  Algunos modelos de inteligencia artificial entrenados por alumnos de  FTC 
 
 IA(x) x es un modelo de ia
 Ent(x,y) x ha sido entrenado por y
-Log(x) x logro superar el umbral de presicion del 90% ????
+Log(x) x logro superar el umbral de presicion del 90% ???
 E;(x) (IA(x) y Ent(x,Alumnos FTC) y Log(x))
 
 

@@ -15,7 +15,8 @@ A;x P1/1(x) -> P1/2(x)
 la primera x está ligada y la otra está libre (por lo que podría sustituirse por cualquier otro símbolo de variable). 
 Una fbf es abierta si contiene algún símbolo de variable libre, y cerrada si todos los símbolos de variables están 
 ligados.
-
+Esta bien???
+Hay q decir donde x1 x2 y x3 esan ligadas o libres
 Por lo tanto:
 I. (A;x1)((E;X2)A(x1,f(x2,x3))-> (A;x3)A(g(c),x1) o A(x1,x3))                |                           |       |
 x1 Esta ligada, en todo la fbf, para A;(x1) del principio
@@ -26,21 +27,21 @@ X2 esta ligada en todos lados
 I. (A;x1)((E;X2)A(x1,f(x2,x3))-> (A;x3)A(g(c),x1) o A(x1,x3))                      | 
  |         
 X3 esta Libre en todos lados
-Como x3 esta libre la fbf es abierta
+Como x3 esta libre la fbf es abierta ???
 
 Ligadas:
                  |    |
 II (∀𝑥1)((∃𝑥2)𝐴(𝑥1,𝑓(𝑥2,𝑥3))) → (∀𝑥3)𝐴(𝑔(𝑐),𝑥1) ∨ 𝐴(𝑥1,𝑥3)
-Lires                    |                   |       |  |
+Libes                    |                   |       |  |
 II (∀𝑥1)((∃𝑥2)𝐴(𝑥1,𝑓(𝑥2,𝑥3))) → (∀𝑥3)𝐴(𝑔(𝑐),𝑥1) ∨ 𝐴(𝑥1,𝑥3)
 
-Es abierta              ??????????
+Es abierta              ???
 
 
 Ejercicio 2 Sea A una fbf que no contiene cuantificadores (es decir, abierta) escrita en algún lenguaje de primer orden. Sea I una interpretación para tal lenguaje. ¿Es posible decidir acerca del 𝐼
-valor de verdad de A en I? Fundamentar. ???? Ni idea
+valor de verdad de A en I? Fundamentar. ??? Ni idea
 
-Pero creo q si se puede decidir hacerca dle valor de verdad
+Pero creo q si se puede decidir hacerca del valor de verdad, Necesitamos que las variables tengan valor?
 
 
 Ejercicio 3. Analizar si son o no lógicamente equivalentes los siguientes pares de fbfs (usar noción 
@@ -75,7 +76,9 @@ Si son logicamente equivalentes
 
 Chatgpt:
 ### ✅ Noción de i-equivalencia
+???
 
+![alt text](image-1.png)
 Dos fórmulas son i-equivalentes si **en toda interpretación** y para **toda valuación**, tienen el **mismo valor de verdad**.
 
 ---
@@ -197,7 +200,7 @@ Ambas fórmulas **tienen el mismo valor de verdad en todas las interpretaciones*
 
 | VI  | (∀x)(S(x) ∨ T(x))             | (∀x)S(x) ∨ (∀x)T(x)           |
 
-Guardo esta para despues
+Guardo esta para despues !!!
 
 
 ## Ejercicio 4
@@ -275,9 +278,4 @@ Interpretacion donde todas las formunas son Falsas
   II. ¬((∀y)(∀x)(𝑃(𝑥,𝑦)→𝑃(𝑦,𝑥))) 
       No es cierto que para todo "y" y para todo x si "x" , no es igual a "y" entonces "y" es no es igual a "x" ????
   III. ∀𝑥()∀𝑦()∀𝑧()((𝑃(𝑥,𝑦) ∧ 𝑃(𝑦,𝑧)) → 𝑃(𝑥,z))
-      Para todo x , y , z si x no es igual a y Y y no es igual a z, entonces z no es igual a x
-  IV: ∀𝑥()𝑃(𝑐,𝑥)
-      para todo x, x no es igual a 0
-  V: (∀𝑥)𝑃(𝑥,𝑓(𝑥))
-    para todo x x no es igual a x.
-
+      Para todo x , y , z si x no es igual a y Y y no es igual a z, entonces z no es ..

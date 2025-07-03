@@ -165,7 +165,7 @@ Ejercicio 15. Demostrar utilizando la técnica del **absurdo** que (p∧¬p)→q
 (p∧¬p)→q es una tautologia
 
 Suponemos que no es una tautologia para que una -> de falso solo existe una opcion y es que sea : V -> F y p y -p siempre da  Falso, por lo tanto nunca se comple la condicion.
-
+???
 Ejercicio 16.  Sea A una fbf donde aparecen solo los conectivos ∧, ¬. Sea A* la fbf que se obtiene  a  partir  de  A  reemplazando  cada  ∧  por  ∨  y  cada  letra  de  proposición  por  su negación  (o  sea,  cada  p  por  ¬p,  cada  q  por  ¬q,  etc.).  Probar,  utilizando  la  técnica  de inducción que A* es lógicamente equivalente a ¬A. 
  
 Ayuda: ver prop 1.15, Hamilton 

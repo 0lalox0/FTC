@@ -56,19 +56,23 @@ Segun hamilton:
 II. |-L (((-B)->(-A))->(((-B)->A)->B))
 por meta teorema de deduccion:
 (((-B)->(-A))|-L(((-B)->A)->B))
+meta teorema
+(((-B)->(-A),((-B)->A) |-L B
 1.(-B) -> (-A -> -B) axioma L1
 2. (-a -> -b) -> (b -> a) axioma L3
-3. (-B) -> (b->a) 1 y 2 por SH
+3. -B -> -A
+4. -B -> A
+5. (-B) -> (b->a) 1 y 2 por SH
 
-
+???
 Segun chat
 III. {((A -> B)->C),B} |-L(A->C)
 Por metateorema dededuccion:
 {((A -> B)->C),B,A} |-L C
 1) ((A -> B)->C) hipotesis
 2)  B hipotesis
-3)  A hipotesis
-4)  A -> B ???????
+3)  L1: (B -> (A -> B))
+4)  MP 2, 3: A -> B ???????
     1) ![alt text](image.png) ?????
 5) C MP de 1 y 4
 lISTO
@@ -94,12 +98,27 @@ Aplicando metateorema de deduccion:
 q,p |-L q
 1) q hipotesis
    Listo
-II. (p -> q) |-L (q)
 
+II. (p -> q) |-L (q)
+Axiomas:
+mtd: |-L (p->q) -> q
+
+
+
+i. p -> (q->p)
+ii. (p -> (q-> p)) -> ((p->q) ->(p->p))
+
+
+
+
+i. A -> (B -> A)
+ii. (A -> (B -> C)) -> ((A -> B) -> (A -> C))
+iii. (-A -> -B) -> (B -> A)
 Podria decir:
 |-L (p -> q) -> q
 
  
+
  No veo Solucion ????
 
  6. Sean A, B y C fbfs del C. de Enunciados. Sea R un conjunto de fbfs del C. de Enunciados. Se sabe que R U {A,B} |-L C y tambien se sabe que R |-L A.
