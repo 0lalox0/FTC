@@ -32,7 +32,8 @@ No se cumple, si x = -1, sigue infinitamente
 5. [SEC 1,2,3]{TRUE}x := 0;x := x + 1; x := x+2{x = 3}
 
 
-Ejercicio 5. Se cumple {x = 10} while x > 0 do x := x – 1 od {x = 0}. Se pide probar (usando la 
+### Ejercicio 5 
+ Se cumple {x = 10} while x > 0 do x := x – 1 od {x = 0}. Se pide probar (usando la 
 lógica de Hoare) que el predicado p = (x  0) es un invariante del while.
 
  p = (x >= 0) 
@@ -48,3 +49,10 @@ lógica de Hoare) que el predicado p = (x  0) es un invariante del while.
 {x >= 0 y x > 0 }-> {x-1 >= 0} es cierto, como x > 0 x -1 siempre va a 
 ser >= 0, 
 P = x >= 0 es una invariante del while
+### Ejercicio 6.
+ La instrucción repeat S until B consiste en ejecutar S, luego evaluar B, si B es falsa 
+volver  a  iterar,  y  en  caso  contrario  terminar.  Explicar  informalmente  por  qué  la  siguiente  regla 
+para probar  la instrucción es sensata (es decir, si se cumplen las premisas, entonces también 
+se cumple la conclusión):  
+   {p} S {q} , q y ¬B ⟶ p    
+{p} repeat S until B {q y B}
