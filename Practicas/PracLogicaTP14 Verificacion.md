@@ -56,3 +56,5 @@ para probar  la instrucción es sensata (es decir, si se cumplen las premisas, e
 se cumple la conclusión):  
    {p} S {q} , q y ¬B ⟶ p    
 {p} repeat S until B {q y B}
+
+

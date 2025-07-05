@@ -59,10 +59,11 @@ por meta teorema de deduccion:
 meta teorema
 (((-B)->(-A),((-B)->A) |-L B
 1.(-B) -> (-A -> -B) axioma L1
-2. (-a -> -b) -> (b -> a) axioma L3
+2. (-A -> -B) -> (b -> a) axioma L3
 3. -B -> -A
 4. -B -> A
 5. (-B) -> (b->a) 1 y 2 por SH
+6. 
 
 ???
 Segun chat
